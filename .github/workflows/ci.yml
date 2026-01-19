@@ -22,3 +22,7 @@ jobs:
 
       - name: Run tests
         run: pytest
+
+      - name: Print success message
+        if: success()
+        run: echo "✅ Python tests passed successfully!"
